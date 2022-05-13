@@ -4,9 +4,7 @@ import type { AppProps } from 'next/app'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <ChakraProvider>
-      <Component {...pageProps} />
-    </ChakraProvider>
+    < Component {...pageProps} />
   )
 }
 
