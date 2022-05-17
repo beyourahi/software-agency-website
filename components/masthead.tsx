@@ -14,7 +14,7 @@ export const Masthead: React.FC = () => (
     </div>
 
     {/* Center Text */}
-    <div className="tw-text-white tw-p-10 tw-font-bold tw-z-10 tw-flex tw-flex-1 tw-flex-col tw-items-center tw-justify-center tw-drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)]">
+    <div className="tw-text-white tw-p-10 tw-font-bold tw-z-10 tw-flex tw-flex-1 tw-flex-col tw-items-center tw-justify-center tw-drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] tw-text-center">
       <h1 className="tw-mb-6 tw-text-4xl xl:tw-text-5xl">Margelo</h1>
       <h2 className="tw-mb-2 tw-text-2xl xl:tw-text-3xl trackin-tight">App development done right</h2>
     </div>
