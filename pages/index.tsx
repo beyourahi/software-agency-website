@@ -1,6 +1,7 @@
 import { Aboutus } from '@/components/aboutus'
 import { Masthead } from '@/components/masthead'
 import { Skills } from '@/components/skills'
+import { Work } from '@/components/work'
 import { Members } from '@/types/member_types'
 import type { NextPage } from 'next'
 import Head from 'next/head'
@@ -15,6 +16,7 @@ const Home: NextPage<Members> = ({ members }) => (
     <Masthead />
     <Aboutus members={members} />
     <Skills />
+    <Work />
   </div >
 )
 
