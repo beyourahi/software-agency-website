@@ -32,7 +32,7 @@ export default Home;
 
 // Fetch Data
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/data");
+  const res = await fetch(`http://${process.env.API_URL}/api/data`);
   const { members, works, brands } = await res.json();
 
   return {
