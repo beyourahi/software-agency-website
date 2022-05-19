@@ -1,6 +1,13 @@
+import { Member, Work } from "../../types";
 import type { NextApiRequest, NextApiResponse } from "next";
 import data from "./data.json";
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+interface DataProps {
+  members: Member[];
+  works: Work[];
+  brands: string[];
+}
+
+export default function handler(req: NextApiRequest, res: NextApiResponse<DataProps>) {
   res.status(200).json(data);
 }
