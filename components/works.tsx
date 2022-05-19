@@ -1,8 +1,10 @@
-import { Works } from "@/types/work_types";
+import { Works as WorkProps } from "../types";
 import { Work } from "./work";
 
-export const Works: React.FC<Works> = ({ works }) => (
+export const Works: React.FC<WorkProps> = ({ works }) => (
   <div>
-    {works.map(work => <Work work={work} />)}
+    {works.map((work, index) => (
+      <Work work={work} key={index} />
+    ))}
   </div>
-)
+);

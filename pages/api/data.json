@@ -60,5 +60,43 @@
       "socialId": "@viktoria",
       "link": "http://www.github.com/beyourahi"
     }
+  ],
+  "works": [
+    {
+      "sentence1": "We built",
+      "brand": "Pink Panda",
+      "sentence2": "'s app.",
+      "link": "https://www.pinkpanda.io/",
+      "image": "/assets/works/pinkpanda.png"
+    },
+    {
+      "sentence1": "We made",
+      "brand": "Steakwallet",
+      "sentence2": " faster.",
+      "link": "https://www.steakwallet.fi/",
+      "image": "/assets/works/steakwallet.png"
+    },
+    {
+      "sentence1": "We helped",
+      "brand": "Showtime",
+      "sentence2": " ship faster.",
+      "link": "https://showtime.xyz/",
+      "image": "/assets/works/showtime.png"
+    }
+  ],
+  "brands": [
+    "coinbase",
+    "exodus",
+    "expensify",
+    "extra",
+    "picnic",
+    "rainbow",
+    "shopify",
+    "showtime",
+    "slingshot",
+    "status",
+    "steakwallet",
+    "stori",
+    "walletconnect"
   ]
 }

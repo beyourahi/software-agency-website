@@ -1,5 +1,5 @@
-import Image from "next/image"
-import { Member as MemberProps } from "@/types/member_types"
+import Image from "next/image";
+import { Member as MemberProps } from "../types";
 
 export const Member: React.FC<MemberProps> = ({ id, name, socialId, link }) => (
   <div>
@@ -8,7 +8,9 @@ export const Member: React.FC<MemberProps> = ({ id, name, socialId, link }) => (
     <div className="tw-text-2xl xl:tw-text-3xl">{name}</div>
 
     <div className="tw-text-xl">
-      <a href={link} target="_blank">{socialId}</a>
+      <a href={link} target="_blank" rel="noreferrer">
+        {socialId}
+      </a>
     </div>
   </div>
-)
+);
