@@ -5,12 +5,12 @@ import { Trustedby } from "@/components/trustedby";
 import { Works } from "@/components/works";
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Brands, Members, Works as WorksProps } from "../types";
+import { Member, Work } from "../types";
 
 interface Props {
-  members: Members;
-  works: WorksProps;
-  brands: Brands;
+  members: Member[];
+  works: Work[];
+  brands: string[];
 }
 
 const Home: NextPage<Props> = ({ members, works, brands }) => (
