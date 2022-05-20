@@ -24,3 +24,10 @@ export interface Work {
 export interface Works {
   works: Work[];
 }
+
+export interface HomePageProps {
+  members: Member[];
+  works: Work[];
+  brands: string[];
+}
+

@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 
-import { Member, Work } from "../types";
+import { HomePageProps } from "../types";
 
 import { Aboutus } from "@/components/aboutus";
 import { Masthead } from "@/components/masthead";
@@ -10,13 +10,7 @@ import { Trustedby } from "@/components/trustedby";
 import { Works } from "@/components/works";
 import { Layout } from "@/components/layout";
 
-interface Props {
-  members: Member[];
-  works: Work[];
-  brands: string[];
-}
-
-const Home: NextPage<Props> = ({ members, works, brands }) => (
+const Home: NextPage<HomePageProps> = ({ members, works, brands }) => (
   <Layout>
     <Masthead />
     <Aboutus members={members} />
@@ -30,7 +24,7 @@ const Home: NextPage<Props> = ({ members, works, brands }) => (
 export default Home;
 
 // Fetch Data
-export async function getStaticProps() {
+export const getStaticProps = async () => {
   const res = await fetch("http://localhost:3000/api/data");
   const { members, works, brands } = await res.json();
 
