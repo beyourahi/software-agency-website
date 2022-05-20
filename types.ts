@@ -25,9 +25,19 @@ export interface Works {
   works: Work[];
 }
 
+export interface Review {
+  review: string
+  person: string
+}
+
+export interface Reviews {
+  reviews: Review[]
+}
+
 export interface HomePageProps {
   members: Member[];
   works: Work[];
   brands: string[];
+  reviews: Review[];
 }
 
